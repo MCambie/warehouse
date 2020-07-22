@@ -1,21 +1,16 @@
 
 
 var swiper = new Swiper('.swiper-container', {
-    direction: 'vertical',
-  loop: true,
-    effect: 'fade',
-
-    spaceBetween: 30,
-
+    loop: true,
     centeredSlides: true,
-
     autoplay: {
 
-      delay: 2500,
+        delay: 5000,
+  
+        disableOnInteraction: false,
+  
+      },
 
-      disableOnInteraction: false,
-
-    },
     pagination: {
       el: '.swiper-pagination',
     },
