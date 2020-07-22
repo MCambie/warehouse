@@ -11,25 +11,31 @@ h1, h2, h3, h4, h5{
     font-weight: 300 !important;
     text-transform: uppercase;
 }
-h3{
-    font-size: 20px;
-    color: #000;
-}
 .upper{
     text-transform: uppercase;
+}
+
+section{
+    margin-right: 7.5%;
+    margin-left: 7.5%;
+}
+section h2{
+    color: #37cfa2;
+    font-size: 40px;
 }
 // Menu
 
 .main-nav {
     position: fixed;
-    width: 85%;
+    width: 100%;
     top:0;
-    left:7.5%;
-    padding:25px 50px;
+    left:0;
+    padding:25px 7.5%;
     display: flex;
     justify-content:flex-end;
     align-items:center;
     z-index:1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 .main-nav a:first-child {
     margin-right:auto;
@@ -49,6 +55,15 @@ h3{
     font-size: 22px;
     font-weight: 200;
 }
+.main-nav.scrolled {
+    background-color: #fff;
+    transition: background-color 200ms linear;
+    box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.2);
+  }
+  .main-nav.scrolled a{
+      color: #000;
+      
+  }
 
 // Swiper
 .swiper-container {
@@ -96,14 +111,7 @@ h3{
 }
 
 // propriétés
-.properties-section{
-    margin-right: 7.5%;
-    margin-left: 7.5%;
-}
-.properties-section h2{
-    color: #37cfa2;
-    font-size: 40px;
-}
+
 .property{
     width: 33%;
     display: inline-block;
@@ -117,3 +125,61 @@ h3{
     width:100%;
     margin-bottom: 1.5rem
 }
+.property > .property-inner {
+    position: relative; }
+    .property > .property-inner:after {
+      position: absolute;
+      content: "";
+      right: 0px;
+      bottom: 0px;
+      top: -20px;
+      background: #000;
+      width: 100%;
+      z-index: -1;
+      -webkit-transition: .3s all ease;
+      -o-transition: .3s all ease;
+      transition: .3s all ease;
+      opacity: 0;
+      visibility: hidden; }
+  
+  .property .property-details {
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease; }
+  
+  .property h3 {
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 0; }
+  
+  .property p {
+    margin-bottom: 0; }
+  
+  .property strong {
+    font-weight: normal; }
+
+.property:hover > .property-inner:after, .property:focus > .property-inner:after {
+    right: -20px;
+    bottom: -20px;
+    opacity: 1;
+    visibility: visible; }
+    @media (max-width: 767.98px) {
+      .property:hover > .property-inner:after, .property:focus > .property-inner:after {
+        right: 0; } }
+  
+  .property:hover .property-details, .property:focus .property-details {
+    position: relative;
+    -webkit-transform: translateX(45px);
+    -ms-transform: translateX(45px);
+    transform: translateX(45px); }
+    @media (max-width: 767.98px) {
+      .property:hover .property-details, .property:focus .property-details {
+        -webkit-transform: translateX(25px);
+        -ms-transform: translateX(25px);
+        transform: translateX(25px); } }
+  
+  .property:hover h3, .property:focus h3 {
+    color: #fff; }
+  
+  .property:hover p, .property:hover strong, .property:focus p, .property:focus strong {
+    color: #939393; }
