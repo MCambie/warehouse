@@ -17,8 +17,8 @@ var swiper = new Swiper('.swiper-container', {
   });
 
   $(function () {
-    $(document).scroll(function () {
-      var $nav = $(".main-nav");
-      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-    });
+  $(document).scroll(function () {
+    var $nav = $(".main-nav");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
   });
+});

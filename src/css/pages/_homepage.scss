@@ -73,6 +73,25 @@
   .property:hover p, .property:hover strong, .property:focus p, .property:focus strong {
     color: #939393; }
 
+    .agent{
+        width: 33%;
+        display: inline-block;
+        padding-right: 20px;
+        padding-left: 20px;
+        color: #000;
+    }
+    .agent img{
+        width:100%;
+        margin:0;
+    }
+    .agent-details{
+        background-color: #37cfa2;
+        padding: 1rem
+    }
+    .agent h3{
+    font-size: 22px;
+    }
+
     .new{
         width: 33%;
         display: inline-block;
