@@ -1,24 +1,52 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <title></title>
+        <title>Warehouse</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Evaluation html css">
         <link href="css/style.min.css" rel="stylesheet">
-    </head>
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">    </head>
     <body>
-        <nav class="nav">
-            <img src="img/logo.png" alt="" class="logo">
-            <a href="index.html">Accueil</a>
-            <a href="info.html">Info</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-        <div class="content">
-            <h1>Page d'accueil</h1>
-        </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <header>
 
+        <nav class="main-nav">
+
+            <a href="index.html">WAREHOUSE</a>
+
+            <a href="#home-section">HOME</a>
+
+            <a href="#properties-section">PROPERTIES</a>
+
+            <a href="#agents-section">AGENTS</a>
+
+            <a href="#news-section">NEWS</a>
+
+            <a href="#contact-section">CONTACT</a>
+        </nav>
+        <div class="swiper-container" style="width:100%">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide first-slide">
+                    <h1 class="text-shadow">Buy &amp; Sell Property Here</h1>
+                    <p class="mb-5 text-shadow">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident vitae,
+                      aut inventore repellendus. Iusto, assumenda! </p>
+                    <p><a href="#" target="_blank" class="btn btn-primary px-5 py-3">Get Started</a></p>
+                </div>
+                <div class="swiper-slide second-slide"><h1 class="text-shadow">Buy &amp; Sell Property Here</h1>
+                    <p class="mb-5 text-shadow">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident vitae,
+                      aut inventore repellendus. Iusto, assumenda! </p>
+                    <p><a href="#" target="_blank" class="btn btn-primary px-5 py-3">Get Started</a></p></div>
+                ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </header>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/main.min.js"></script>
+    
     </body>
 </html>
