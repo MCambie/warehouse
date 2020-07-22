@@ -1,0 +1,88 @@
+
+// propriétés
+
+.property{
+    width: 33%;
+    display: inline-block;
+    padding-right: 35px;
+    padding-left: 35px;
+
+}
+
+
+.property img{
+    width:100%;
+    margin-bottom: 1.5rem
+}
+.property > .property-inner {
+    position: relative; }
+    .property > .property-inner:after {
+      position: absolute;
+      content: "";
+      right: 0px;
+      bottom: 0px;
+      top: -20px;
+      background: #000;
+      width: 100%;
+      z-index: -1;
+      -webkit-transition: .3s all ease;
+      -o-transition: .3s all ease;
+      transition: .3s all ease;
+      opacity: 0;
+      visibility: hidden; }
+  
+  .property .property-details {
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease; }
+  
+  .property h3 {
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 0; }
+  
+  .property p {
+    margin-bottom: 0; }
+  
+  .property strong {
+    font-weight: normal; }
+
+.property:hover > .property-inner:after, .property:focus > .property-inner:after {
+    right: -20px;
+    bottom: -20px;
+    opacity: 1;
+    visibility: visible; }
+    @media (max-width: 767.98px) {
+      .property:hover > .property-inner:after, .property:focus > .property-inner:after {
+        right: 0; } }
+  
+  .property:hover .property-details, .property:focus .property-details {
+    position: relative;
+    -webkit-transform: translateX(45px);
+    -ms-transform: translateX(45px);
+    transform: translateX(45px); }
+    @media (max-width: 767.98px) {
+      .property:hover .property-details, .property:focus .property-details {
+        -webkit-transform: translateX(25px);
+        -ms-transform: translateX(25px);
+        transform: translateX(25px); } }
+  
+  .property:hover h3, .property:focus h3 {
+    color: #fff; }
+  
+  .property:hover p, .property:hover strong, .property:focus p, .property:focus strong {
+    color: #939393; }
+
+    .new{
+        width: 33%;
+        display: inline-block;
+        padding-right: 35px;
+        padding-left: 35px;
+    
+    }
+    
+    
+    .new img{
+        width:100%;
+        margin-bottom: 1.5rem
+    }
