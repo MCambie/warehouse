@@ -1,0 +1,38 @@
+.property-header{
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    font-weight: 400;
+    padding-bottom: 3rem;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.2)),
+     url('../img/hero_1.jpg');
+        background-position:center;
+         background-size: cover;
+    div{
+        max-width: 40%;
+        color: #fff;
+        margin: 0 auto;
+        @media screen and (max-width: 375px){
+            max-width: 100%;
+        }
+        h1{
+            font-size: 36px;
+        }
+        p{
+            margin-bottom: 3rem;
+        }
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+}
+.property-single-details{
+    width: 48%;
+    display: inline-block;
+    img{
+        width:100%;
+    }
+}
