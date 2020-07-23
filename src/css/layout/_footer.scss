@@ -1,0 +1,62 @@
+#footer{
+    margin:0;
+    max-width: 100%;
+    background-color:#333333;
+}
+footer h4 {
+        color: white;
+        font-size: 18px;
+        margin-bottom: 1.5rem
+    }
+
+
+.about-us {
+    max-width: 300px;
+    width: 100%;
+    line-height: 30px;
+}
+.follow-us {
+    a {
+        color: grey;
+        margin-right: 50px;
+        transition: .3s ease-in-out;
+        &:hover{
+            color: white;
+        }
+    }
+    @media only screen and (max-width: 650px) {
+        max-width: 600px;
+        width: 100%;
+        .media-wrapper{
+            display: flex;
+                        justify-content: space-around;
+
+        }
+        a{
+            margin-right: 0;
+        }
+    }
+    
+
+}
+.copyright {
+    text-align: center;
+    font-weight: 400;
+    padding-top: 3rem;
+    a{
+        color: #cbcbcb;
+        text-decoration: none;
+        transition: .3s ease-in-out;
+        &:hover{
+            color: white;
+        }
+    }
+}
+.footer-details {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: space-around;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 3rem;
+}
