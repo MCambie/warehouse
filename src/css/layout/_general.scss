@@ -5,6 +5,9 @@ body{
     font-weight: 400;
     font-size: 1rem; 
 }
+html{
+    scroll-behavior: smooth;
+}
 #button {
     display: flex;
     justify-content: center;
@@ -37,6 +40,9 @@ h1, h2, h3, h4, h5{
     font-weight: 300 !important;
     text-transform: uppercase;
 }
+a{
+    text-decoration: none;
+}
 
 
 section{
@@ -64,6 +70,9 @@ section h3{
     padding: 100px 0;
 }
 
+a.active{
+    color: #37cfa2!important;
+}
 
 .btn{
     padding: 15px 45px;
@@ -84,3 +93,4 @@ section h3{
     font-size: 40px;
     height: 40px;
 }
+

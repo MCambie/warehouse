@@ -1,14 +1,24 @@
+const burger = document.querySelector('.burger');
+const toggleMenu = document.querySelector('.toggle-menu');
+const closeButton = document.querySelector('.close-button');
+
+function displayMenu(){
+  toggleMenu.style.right = 0;
+}
+
+function closeMenu(){
+  toggleMenu.style.right = '100%';
+}
+
+burger.addEventListener('click', displayMenu);
+closeButton.addEventListener('click', closeMenu);
 
 
+// Swiper
 var swiper = new Swiper('.swiper-container', {
     loop: true,
-    centeredSlides: true,
     autoplay: {
-
-        delay: 5000,
-  
-        disableOnInteraction: false,
-  
+        delay: 10000,
       },
 
     pagination: {
@@ -16,12 +26,15 @@ var swiper = new Swiper('.swiper-container', {
     },
   });
 
+//   Style au scroll
   $(function () {
   $(document).scroll(function () {
     var $nav = $(".main-nav");
     $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
   });
 });
+
+// Bouton back-to-top
 
 var btn = $('#button');
 
