@@ -8,6 +8,10 @@
     padding-left: 35px;
 
 }
+.property a {
+    text-decoration: none;
+    color: #939393;
+}
 
 
 .property img{
@@ -79,10 +83,20 @@
         padding-right: 20px;
         padding-left: 20px;
         color: #000;
+        
+    }
+    .agent-img{
+        overflow: hidden;
     }
     .agent img{
         width:100%;
         margin:0;
+        
+        transition: transform .5s ease;
+    }
+
+    .agent img:hover{
+        transform: scale(1.1);
     }
     .agent-details{
         background-color: #37cfa2;
@@ -91,17 +105,74 @@
     .agent h3{
     font-size: 22px;
     }
+    #how-it-works{
+        margin:0;
+        max-width: 100%;
+        background-color: #37cfa2;
+        text-align: center;
+    }
+    #how-it-works .container, #contact .container, #footer .container{
+        margin-right: 7.5%;
+    margin-left: 7.5%;
+    }
+    .work{
+        width: 33%;
+        display: inline-block;
+        padding-right: 20px;
+        padding-left: 20px;
+        color: #000;
+        
+    }
+    .work h3{
+        color: #343a40;
+    }
+    .work p{
+        line-height: 40px;
+    }
+    .work1, .work2{
+        position: relative;
+    }
+    .work1::after, .work2::after{
+    content: "";
+    background: #000;
+    height: 10px;
+    top: 50%;
+    position: absolute;
+    left: 100%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    }
+    .news-section .section-header{
+        text-align: center;
+    }
+
 
     .new{
         width: 33%;
         display: inline-block;
-        padding-right: 35px;
-        padding-left: 35px;
+        padding-right: 20px;
+        padding-left: 20px;
     
+    }
+    .new-details a{
+        text-decoration: none;
+        color: #37cfa2;
     }
     
     
     .new img{
         width:100%;
         margin-bottom: 1.5rem
+    }
+
+    #contact{
+        margin:0;
+        max-width: 100%;
+        background-color: #F8F9FA;
+    }
+    #footer{
+        margin:0;
+        max-width: 100%;
+        background-color:#333333;
     }

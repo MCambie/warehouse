@@ -31,16 +31,20 @@
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide first-slide">
-                    <h1 class="upper">Buy &amp; Sell Property Here</h1>
-                    <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident vitae,
-                      aut inventore repellendus. Iusto, assumenda! </p>
-                    <p><a href="#" target="_blank" class="btn">Get Started</a></p>
+                    <div class="swiper-details">
+                        <h1 class="upper">Buy &amp; Sell Property Here</h1>
+                        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident vitae,
+                          aut inventore repellendus. Iusto, assumenda! </p>
+                        <a href="#" target="_blank" class="btn">Get Started</a>
+                    </div>
                 </div>
                 <div class="swiper-slide second-slide">
-                    <h1 class="upper">Buy &amp; Sell Property Here</h1>
-                    <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident vitae,
-                      aut inventore repellendus. Iusto, assumenda! </p>
-                    <a href="#" target="_blank" class="btn">Get Started</a>
+                    <div class="swiper-details">
+                        <h1 class="upper">Buy &amp; Sell Property Here</h1>
+                        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident vitae,
+                          aut inventore repellendus. Iusto, assumenda! </p>
+                        <a href="#" target="_blank" class="btn">Get Started</a>
+                    </div>
                 </div>
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
@@ -48,53 +52,80 @@
     </header>
     <section class="properties-section" id="properties-section">
               <div class="container">
-                  <h2 class="">Our Outstanding houses</h2>
+                  <div class="section-header">
+                      <h2 class="">Our Outstanding houses</h2>
+                  </div>
               <div class="property">
                   <div class="property-inner">
                       
                     <a href="property-single.html" class=""><img src="img/property_1.jpg"
-                        alt="FImageo" class="img-fluid"></a>
+                        alt="property image" >
                               <div class="property-details">
                                     <h3 class="upper">Un petit appart cosy</h3>
                                     <p>New York - USA</p>
                                     <strong>$20,000,000</strong>
                               </div>
+                            </a>
                   </div>
               </div>
               <div class="property">
                 <div class="property-inner">
                     
                     <a href="property-single.html" class=""><img src="img/property_1.jpg"
-                        alt="FImageo" class="img-fluid"></a>
+                        alt="property image" >
                             <div class="property-details">
                                   <h3 class="upper">Un petit appart cosy</h3>
                                   <p>New York - USA</p>
                                   <strong>$20,000,000</strong>
                             </div>
+                        </a>
                 </div>
             </div>
             <div class="property">
                 <div class="property-inner">
                     
                     <a href="property-single.html" class=""><img src="img/property_1.jpg"
-                        alt="FImageo" class="img-fluid"></a>
+                        alt="property image" >
                             <div class="property-details">
                                   <h3 class="upper">Un petit appart cosy</h3>
                                   <p>New York - USA</p>
                                   <strong>$20,000,000</strong>
                             </div>
+                        </a>
                 </div>
             </div>
             </div>
     </section>
     <section class="agents-section" id="agents-section">
         <div class="container">
-            <h2>Real estate agents</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam molestias libero quia.</p>
-                <div class="agents">
+            <div class="section-header">
+                <h2>Real estate agents</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam molestias libero quia.</p>
+                    
+            </div><div class="agents">
 
                     <div class="agent">
-                            <img src="/img/person_1.jpg" alt="agent img">
+                            <div class="agent-img">
+                                <img src="/img/person_1.jpg" alt="agent img">
+                            </div>
+                        <div class="agent-details">
+                            <h3>Ed Sheeran</h3>
+                            <p>Head Director</p>
+                        </div>
+                    </div>
+                    <div class="agent">
+                            <div class="agent-img">
+                                <img src="/img/person_2.jpg" alt="agent img">
+                            </div>
+                        <div class="agent-details">
+                            <h3>Homer Simmpson</h3>
+                            <p>Head Director</p>
+                        </div>
+                    </div>
+                    <div class="agent">
+                            <div class="agent-img">
+                                <img src="/img/person_3.jpg" alt="agent img">
+                            </div>
                         <div class="agent-details">
                             <h3>Ed Sheeran</h3>
                             <p>Head Director</p>
@@ -110,13 +141,34 @@
 
     <section id="how-it-works">
         <div class="container">
-
+            <div class="section-header">
+                <h2 class="text-black">How it works</h2>
+            </div>
+            <div class="works">
+                <div class="work work1">
+                    <p>01.<i class="fas fa-home"></i></p>
+                    <h3>Find Property.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="work work2">
+                    <p>02.<i class="fas fa-dollar-sign"></i></p>
+                    <h3>Buy property.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="work work3">
+                    <p>03.<i class="fas fa-heart"></i></p>
+                    <h3>Outstanding houses.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="news-section" id="news">
+    <section class="news-section" id="news-section">
         <div class="container">
-            <h2>News &amp; events</h2>
+            <div class="section-header">
+                <h2>News &amp; events</h2>
+            </div>
 
                 <div class="news">
 
@@ -126,7 +178,7 @@
                         </div>
                         <div class="new-details">
                             <h3>News Title 1</h3>
-                            <span>Allison Holmes </span><span>Jan 18, 2019 </span><span>Outstanding Propreties</span>
+                            <p>Alison Bloking • Jan 18, 2019 • <a href="#">Outstanding properties</a></p>
                         </div>
                     </div>
 
@@ -136,7 +188,7 @@
                         </div>
                         <div class="new-details">
                             <h3>News Title 2</h3>
-                            <span>Allison Holmes </span><span>Jan 18, 2019 </span><span>Outstanding Propreties</span>
+                            <p>Alison Bloking • Jan 18, 2019 • <a href="#">Outstanding properties</a></p>
                         </div>
                     </div>
 
@@ -146,7 +198,7 @@
                         </div>
                         <div class="new-details">
                             <h3>News Title 3</h3>
-                            <span>Allison Holmes </span><span>Jan 18, 2019 </span><span>Outstanding Propreties</span>
+                            <p>Alison Bloking • Jan 18, 2019 • <a href="#">Outstanding properties</a></p>
                         </div>
                     </div>
                 </div>
@@ -158,7 +210,9 @@
     <!-- section contact -->
     <section class="contact-section" id="contact">
         <div class="container">
-                    <h2>Contact Us</h2>
+                    <div class="section-header">
+                        <h2>Contact Us</h2>
+                    </div>
                     <div class="contact-form">
 
                         <div class="form_names">
@@ -222,40 +276,43 @@
 </main>
 
 <footer>
-    <div class="container">
-        <div class="footer-details">
-                <div>
-                    <h4>About Us</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate molestiae voluptatem eveniet nesciunt sequi culpa itaque in nobis consequatur doloribus.</p>
+    <section id="footer">
+        <div class="container">
+            <div class="footer-details">
+                    <div>
+                        <h4>About Us</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate molestiae voluptatem eveniet nesciunt sequi culpa itaque in nobis consequatur doloribus.</p>
+                    </div>
+    
+                    <div>
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>
+                                <a href=""><i></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i></i></a>
+                            </li>
+                        </ul>
+    
+                    </div>
+    
                 </div>
-
                 <div>
-                    <h3>Follow Us</h3>
-                    <ul>
-                        <li>
-                            <a href=""><i></i></a>
-                        </li>
-                        <li>
-                            <a href=""><i></i></a>
-                        </li>
-                        <li>
-                            <a href=""><i></i></a>
-                        </li>
-                        <li>
-                            <a href=""><i></i></a>
-                        </li>
-                    </ul>
-
+                    Copyright © 2020 All rights reserved | This template is made with  by Colorlib
                 </div>
-
+    
             </div>
-            <div>
-                Copyright © 2020 All rights reserved | This template is made with  by Colorlib
-            </div>
-
         </div>
-    </div>
+    </section>
 </footer>
+<script src="https://kit.fontawesome.com/e51d0506aa.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/main.min.js"></script>
