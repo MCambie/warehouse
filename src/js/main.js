@@ -1,13 +1,15 @@
-const burger = document.querySelector('.burger');
-const toggleMenu = document.querySelector('.toggle-menu');
-const closeButton = document.querySelector('.close-button');
+var burger = document.querySelector('.burger');
+var toggleMenu = document.querySelector('.toggle-menu');
+var closeButton = document.querySelector('.close-button');
 
 function displayMenu(){
   toggleMenu.style.right = 0;
 }
 
 function closeMenu(){
-  toggleMenu.style.right = '100%';
+  console.log('ca marche');
+  
+  toggleMenu.style.display = 'none';
 }
 
 burger.addEventListener('click', displayMenu);
